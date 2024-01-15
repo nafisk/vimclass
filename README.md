@@ -19,9 +19,9 @@ This repository contains a series of exercises and resources for learning and pr
 
 ## Cheat Sheets
 
-![Vim Cheat Sheet (Advanced)](./vim-cheat-sheet-advanced.png)
-![Vim Cheat Sheet (Graphical)](./vim-cheat-sheet-graphical.png)
-![Vim Cheat Sheet (Simple)](./vim-cheat-sheet-simple.png)
+![Vim Cheat Sheet (Advanced)](./cheatsheets/vim-cheat-sheet-advanced.png)
+![Vim Cheat Sheet (Graphical)](./cheatsheets/vim-cheat-sheet-graphical.png)
+![Vim Cheat Sheet (Simple)](./cheatsheets/vim-cheat-sheet-simple.png)
 
 ## Slides
 
