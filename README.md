@@ -1,2 +1,1 @@
 # vimclass
-# vimclass
