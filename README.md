@@ -2,33 +2,83 @@
 
 This repository contains a series of exercises and resources for learning and practicing Vim, the powerful text editor. Below are the links to the key resources available in this repository.
 
-## Exercises
+## Basic Commands
 
-- [Exercise 01: Creating and Editing a New File with Vim](./Exercise-01-CreatingandEditingaNewFilewithVim.pdf)
-- [Exercise 02: Essential Navigation Commands](./Exercise-02-EssentialNavigationCommands.pdf)
-- [Exercise 03: Deleting Text](./Exercise-03-DeletingText.pdf)
-- [Exercise 04: Getting Help](./Exercise-04-GettingHelp.pdf)
-- [Exercise 05: Cut, Copy, Paste](./Exercise-05-CutCopyPaste.pdf)
-- [Exercise 06: Inserting, Changing, Replacing, and Joining](./Exercise-06-InsertingChangingReplacingandJoining.pdf)
-- [Exercise 07: Search, Find, Replace](./Exercise-07-SearchFindReplace.pdf)
-- [Exercise 08: Text Objects](./Exercise-08-TextObjects.pdf)
-- [Exercise 09: Macros](./Exercise-09-Macros.pdf)
-- [Exercise 10: Visual Mode](./Exercise-10-VisualMode.pdf)
-- [Exercise 11: Vimrc](./Exercise-11-Vimrc.pdf)
-- [Exercise 12: Buffers](./Exercise-12-Buffers.pdf)
+- `:q` - Quit NeoVim
+- `:w` - Save the current file
+- `:wq` or `:x` - Save and quit
+- `:q!` - Quit without saving
+- `:e {file}` - Open a file
 
-## Cheat Sheets
+## Navigation
 
-![Vim Cheat Sheet (Advanced)](./cheatsheets/vim-cheat-sheet-advanced.png)
+- `h` - Move left
+- `j` - Move down
+- `k` - Move up
+- `l` - Move right
+- `gg` - Go to the top of the file
+- `G` - Go to the bottom of the file
+- `{line_number}G` - Go to the specified line number
+
+## Editing
+
+- `i` - Enter insert mode
+- `a` - Enter insert mode after the current character
+- `o` - Open a new line below the current line and enter insert mode
+- `O` - Open a new line above the current line and enter insert mode
+- `Esc` - Exit insert mode
+- `u` - Undo
+- `Ctrl + r` - Redo
+- `dd` - Delete a line
+- `yy` - Yank (copy) a line
+- `p` - Paste below the cursor
+- `P` - Paste above the cursor
+
+## Visual Mode
+
+- `v` - Start visual mode (character selection)
+- `V` - Start visual line mode (line selection)
+- `Ctrl + v` - Start visual block mode (block selection)
+
+## Searching
+
+- `/` - Search for a pattern
+- `n` - Move to the next occurrence
+- `N` - Move to the previous occurrence
+- `:%s/old/new/g` - Replace all occurrences of 'old' with 'new' in the file
+
+## Splitting Windows
+
+- `:split` or `:sp` - Horizontal split
+- `:vsplit` or `:vsp` - Vertical split
+- `Ctrl + w w` - Switch between splits
+
+## Tabs
+
+- `:tabnew` or `:tabnew {file}` - Open a new tab
+- `gt` - Move to the next tab
+- `gT` - Move to the previous tab
+- `:tabclose` - Close the current tab
+
+## Buffers
+
+- `:ls` - List all open buffers
+- `:b {buffer_number}` - Switch to a buffer
+- `:bd` - Delete a buffer (close a file)
+
+## Plugins and Configuration
+
+- `:PlugInstall` - Install plugins (assuming you are using vim-plug)
+- `:PlugUpdate` - Update plugins
+- `:source %` - Reload the current configuration file
+
+## Custom Commands
+
+- `:map` - Create a custom shortcut
+- `:autocmd` - Define an automatic command on certain events
+
+This list covers many of the fundamental and intermediate features of NeoVim. Explore the `:help` command in NeoVim for detailed documentation on these and other features.
+
+## Visual Representation
+
 ![Vim Cheat Sheet (Graphical)](./cheatsheets/vim-cheat-sheet-graphical.png)
-![Vim Cheat Sheet (Simple)](./cheatsheets/vim-cheat-sheet-simple.png)
-
-## Slides
-
-- [Slides for Various Topics](./slides/)
-
-## Sample Configuration
-
-- [Sample Vim Configuration File](./vimrc-sample)
-
-Feel free to explore and practice with the provided text files and exercises. Happy Vimming!
